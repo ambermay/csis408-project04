@@ -5,12 +5,113 @@
         <meta charset="utf-8" />
         <title>Project 04</title>
         <link rel="stylesheet" href="style.css">
+
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!--Material Icons/Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     </head>
 
     <body>
+        <div class="conatiner">
+            <nav>
+                <div class="nav-wrapper blue-grey darken-4">  
+            </nav>
+    
+              <div class="row">
+                <div class="col s10 m8 l6 offset-m2 offset-s1">
+                    <h4 class="center">Finance App</h4>
+                </div>
+              </div>
 
-        <!-- Page Content Here -->
+              <div class="row">
+                  <div class="col s10 m8 l6 offset-m2 offset-s1">
+                    <div class="card-panel white">
+                        <div class="inc-exp-container">
+                            <div class="inc-exp-div">
+                              <h5>Income</h5>
+                              <p id="money-plus" class="money plus">+$0.00</p>
+                            </div>
+                            <div class="inc-exp-div">
+                              <h5>Expense</h5>
+                              <p id="money-minus" class="money minus">-$0.00</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col s12 m8 l6">
+                    <div class="section">
+                        <h5 class="bold-text">History</h5>
+                      </div>
+                      <div class="divider"></div>
+                  </div>
+                </div>
+
+
+              <div class="row">
+                <div class="col s12 m8 l6">
+                    <div class="section">
+                        <h5 class="bold-text">Add new transaction</h5>
+                      </div>
+                      <div class="divider"></div>
+                  </div>
+                </div>
+
+
+              <div class="row">
+                <form id="form">
+                    <div class="row">
+                        <div class="input-field col s12 m8 l6">
+                          <input id="text" type="text" class="validate">
+                          <label for="text">Text</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m8 l6">
+                          <input id="amount" type="number" class="validate">
+                          <label for="amount">Amount:
+                            (negative - expense, positive - income)</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <button class="waves-effect waves-light btn">Add transaction</button>
+                        </div>
+                    </div>
+                    
+                  </form>
+              </div>
+              
+
+        </div>
+
+
+
+
+
+
 
         <script src="app.js"type="text/javascript"></script>
+        <script>
+            M.AutoInit()
+      </script>
+            <!--Import jQuery before materialize.js-->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+     
+            <script>
+               $(".button-collapse").sideNav();
+            </script>
     </body>
 </html>
